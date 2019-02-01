@@ -1,0 +1,176 @@
+<%= stylesheet_link_tag "background_image.css" %>
+<style>
+    #text {
+        font-size: 19px;
+    }
+    .lead {
+        font-size: 25px;
+    }
+    .grid { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+    .grid img {
+        max-width: 100%;
+    }
+
+    .carousel {
+        margin: 1.5rem;
+    }
+    .carousel-inner {
+        height: auto;
+    }
+
+    .carousel-control {
+        position: absolute;
+        top: 1%; /* pushes the icon in the middle of the height */
+        z-index: 5;
+        display: inline-block;
+    }
+
+    .carousel-control-prev-icon {
+        outline: #373193;
+        position: absolute;
+        margin-left: -20px;
+        top: 130px;
+    }
+    .carousel-control-next-icon {
+        outline: #373193;
+        position: absolute;
+        margin-right: -30px;
+        top: 130px;
+    }
+
+    .carousel-control-next-icon:after
+    {
+    content: '>';
+    font-size: 25px;
+    color: #373193;
+    }
+
+    .carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 25px;
+    color: #373193;
+    }
+
+    .carousel-indicators li {
+        background-color: gray;   
+    }
+    .carousel-indicators .active {
+        background-color: #373193;
+    }
+</style>
+
+<div class="jumbotron jumbotron-halfheight bg-growth bg-dark text-white mb-0 radius-0 jumbotron-bg-image">
+  <div class="container">
+    <div class="row">
+        <div class="col-xl-10">
+            <h5 class="display-3 text-light display-fix">Pramod Gobburi</h5>
+            <div class="typewriter">
+                <h6 class="lead">Software Developer</h6>
+            </div>
+            <div class="mt-4">
+                <a href="https://www.linkedin.com/in/pramod-gobburi/"
+                    class="btn btn-primary btn-lg" target="_blank">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.github.com/pramodgobburi3"
+                    class="btn btn-primary btn-lg" target="_blank">
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-4 px-5 mt-3 shadow bg-white">
+  <h2>About Me:</h2>
+  <p id="text" class="ml-3 mb-3">I am an undergraduate from McNeese State University seeking full time opportunities in Software Development fields.  
+  I am experienced and knowledgeable in technical problem solving, programming, and am always driven to learn new things.</p>
+  
+</div>
+<div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container py-4 my-3 shadow bg-white">
+                <h3>Education:</h3>
+                <br>
+                <div class="container px-40">
+                    <div class="card text-center px-10">
+                        <div class="card-header">
+                            Aug 2015 - May 2019
+                        </div>
+                        <div class="card-body">
+                            <%= image_tag  "msu_logo.png", size:"60x50", class:"mb-3" %>
+                            <h4 class="card-title">McNeese State University</h4>
+                            <p id="text" class="card-text">Bachelor's of Computer Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container py-4 my-3 shadow bg-white">
+                <h3>Experience:</h3>
+                <div class="container px-40">
+                    <div class="card text-center px-10">
+                        <div class="card-header">
+                            Nov 2017 - Jan 2019
+                        </div>
+                        <div class="card-body">
+                            <%= image_tag  "360fuel.png", size:"130x50", class:"mb-3" %>
+                            <h4 class="card-title">360 Fuel Corp</h4>
+                            <h5 id="text" class="card-text">Software Developer</h5>
+                            <div style="text-align:left; margin-left:10%; margin-right:10%">
+                                <ul>
+                                    <li id="text" class="card-text">Led a development team, coordinated and developed multiple projects, and ensured product deployment.</li>
+                                    <li id="text" class="card-text">Designed, developed and published Android applications.</li>
+                                    <li id="text" class="card-text">Built various software components for a self-order kiosk and a mobile app.</li>
+                                    <li id="text" class="card-text">Developed REST APIs and full stack web applications using Django framework.</li>
+                                    <li id="text" class="card-text">Developed responsive web applications and dashboards using Angular.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container py-4 my-3 shadow bg-white">
+                <h3>Skills / Languages:</h3>
+
+                <ul class="list-group" style="margin-left: 2%; margin-right: 2%">
+                    <li id="text" class="list-group-item">C, C#, Java, Python, and SQL</li>
+                    <li id="text" class="list-group-item">HTML, CSS, and Javascript</li>
+                    <li id="text" class="list-group-item">Full Stack Frameworks - Django, Spring Boot, Rails</li>
+                    <li id="text" class="list-group-item">Mobile Development - Android, React Native</li>
+                    <li id="text" class="list-group-item">Database Management - MySQL, PostgreSQL</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+</div>
+<p></p>
+<p></p>
+<p></p>
+
+<div>
+
+</div>
