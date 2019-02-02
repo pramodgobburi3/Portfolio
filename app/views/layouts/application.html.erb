@@ -41,4 +41,14 @@
       <%= yield %>
     </main>
   </body>
+  <footer class="text-muted" style="padding-top: 50px;">
+      <div class="container">
+        <p class="float-right">
+          <a href="">Back to top</a>
+        </p>
+        <p>Download a PDF Resume <%= link_to "here", download_resume_path, data: { turbolinks: false } %></p>
+
+        <p>© 2019 Pramod Gobburi. All rights reserved. </p>
+      </div>
+    </footer>
 </html>

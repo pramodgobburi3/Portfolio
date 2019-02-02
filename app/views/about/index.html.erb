@@ -63,6 +63,14 @@
     .carousel-indicators .active {
         background-color: #373193;
     }
+
+    .primay-button:visited {
+        background-color: #5371fb;
+    }
+    .resume-button:visited {
+        color: white;
+    }
+    
 </style>
 
 <div class="jumbotron jumbotron-halfheight bg-growth bg-dark text-white mb-0 radius-0 jumbotron-bg-image">
@@ -72,16 +80,18 @@
             <h5 class="display-3 text-light display-fix">Pramod Gobburi</h5>
             <div class="typewriter">
                 <h6 class="lead">Software Developer</h6>
+                <p id="text">Lake Charles, LA</p>
             </div>
             <div class="mt-4">
                 <a href="https://www.linkedin.com/in/pramod-gobburi/"
-                    class="btn btn-primary btn-lg" target="_blank">
+                    class="btn btn-primary btn-lg primary-button" target="_blank">
                     <span>LinkedIn</span>
                 </a>
                 <a href="https://www.github.com/pramodgobburi3"
-                    class="btn btn-primary btn-lg" target="_blank">
+                    class="btn btn-primary btn-lg primary-button" target="_blank">
                     <span>GitHub</span>
                 </a>
+                <%= link_to "PDF Resume", download_resume_path, data: { turbolinks: false }, class:"btn btn-active btn-outline-light resume-button btn-hover-text-dark btn-lg ml-5" %>
             </div>
         </div>
     
@@ -167,8 +177,6 @@
     </a>
     </div>
 </div>
-<p></p>
-<p></p>
 <p></p>
 
 <div>
